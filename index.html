@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Блог на костях</title>
+
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="bb-blog">
+	<meta name="msapplication-TileImage" content="img/ms-touch-icon-144x144-precomposed.png">
+	<meta name="msapplication-TileColor" content="#3372DF">
+
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<link rel="icon" sizes="192x192" href="img/chrome-touch-icon-192x192.png">
+	<link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-precomposed.png">
+	<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin'>
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/line-icons.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="wrapper"> 
+		<div class="header">
+			<div class="container">
+				<a class="logo" href="#posts">
+					<img src="img/logo1-default.png" alt="Logo">
+				</a>
+				<div class="topbar">
+					<ul class="loginbar pull-right">
+						<li class="hoverSelector"><i class="fa fa-plus"></i> <a href="#post/new">Add post</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="preloader"></div>
+		<div class="container content">
+			<div class="row blog-page">
+				<div class="col-md-9">
+					<div class="blog-container">
+						<!--<div class="text-center">-->
+						<!--<ul class="pagination">-->
+						<!--<li class="active"><a href="#">«</a></li>-->
+						<!--<li><a href="#">1</a></li>-->
+						<!--<li><a href="#">2</a></li>-->
+						<!--<li><a href="#">3</a></li>-->
+						<!--<li><a href="#">4</a></li>-->
+						<!--<li><a href="#">5</a></li>-->
+						<!--<li><a href="#">6</a></li>-->
+						<!--<li><a href="#">7</a></li>-->
+						<!--<li><a href="#">8</a></li>-->
+						<!--<li><a href="#">»</a></li>-->
+						<!--</ul>-->
+						<!--</div>-->
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="sidebar-container"></div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-v1">
+			<div class="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3 md-margin-bottom-40">
+							<a href="index.html"><img id="logo-footer" class="footer-logo" src="img/logo2-default.png" alt=""></a>
+							<p>About Unify dolor sit amet, consectetur adipiscing elit. Maecenas eget nisl id libero tincidunt sodales.</p>
+							<p>Duis eleifend fermentum ante ut aliquam. Cras mi risus, dignissim sed adipiscing ut, placerat non arcu.</p>    
+						</div>
+
+						<div class="col-md-3 md-margin-bottom-40">
+							<div class="posts">
+								<div class="headline"><h2>Latest Posts</h2></div>
+								<ul class="list-unstyled latest-list">
+									<li>
+										<a href="#">Incredible content</a>
+										<small>May 8, 2014</small>
+									</li>
+									<li>
+										<a href="#">Best shoots</a>
+										<small>June 23, 2014</small>
+									</li>
+									<li>
+										<a href="#">New Terms and Conditions</a>
+										<small>September 15, 2014</small>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-3 md-margin-bottom-40">
+							<div class="headline"><h2>Useful Links</h2></div>
+							<ul class="list-unstyled link-list">
+								<li><a href="#">About us</a><i class="fa fa-angle-right"></i></li>
+								<li><a href="#">Portfolio</a><i class="fa fa-angle-right"></i></li>
+								<li><a href="#">Latest jobs</a><i class="fa fa-angle-right"></i></li>
+								<li><a href="#">Community</a><i class="fa fa-angle-right"></i></li>
+								<li><a href="#">Contact us</a><i class="fa fa-angle-right"></i></li>
+							</ul>
+						</div>
+						<div class="col-md-3 map-img md-margin-bottom-40">
+							<div class="headline"><h2>Contact Us</h2></div>                        
+							<address class="md-margin-bottom-40">
+								25, Lorem Lis Street, Orange <br />
+								California, US <br />
+								Phone: 800 123 3456 <br />
+								Fax: 800 123 3456 <br />
+								Email: <a href="mailto:info@anybiz.com" class="">info@anybiz.com</a>
+							</address>
+						</div>
+					</div>
+				</div> 
+			</div>
+			<div class="copyright">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">                     
+							<p>
+								2015 &copy; All Rights Reserved.
+								<a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+							</p>
+						</div>
+						<div class="col-md-6">
+							<ul class="footer-socials list-inline">
+								<li>
+									<a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook">
+										<i class="fa fa-facebook"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Skype">
+										<i class="fa fa-skype"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Google Plus">
+										<i class="fa fa-google-plus"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Linkedin">
+										<i class="fa fa-linkedin"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Pinterest">
+										<i class="fa fa-pinterest"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter">
+										<i class="fa fa-twitter"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Dribbble">
+										<i class="fa fa-dribbble"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div> 
+			</div>
+		</div>     
+	</div>
+
+	<script type="text/template" id="tpl-posts">
+		<div class="col-md-9">
+			<div class="posts-container"></div>  
+		</div>
+		<div class="col-md-3 magazine-page">
+			<div class="headline headline-md"><h2>Search</h2></div>            
+			<div class="input-group margin-bottom-40">
+				<input type="text" id="searchInput" class="form-control" placeholder="Search">
+				<span class="input-group-btn">
+					<button class="btn-u" id="searchBtn" type="button">Go</button>
+				</span>
+			</div>
+			<div class="posts margin-bottom-40">
+				<div class="headline headline-md"><h2>Latest Posts</h2></div>
+				<dl class="dl-horizontal">
+					<dt><a href="#"><img src="img/6.jpg" alt="" /></a></dt>
+					<dd>
+						<p><a href="#">Responsive Bootstrap 3 Template placerat idelo alac eratamet.</a></p> 
+					</dd>
+				</dl>
+			</div>
+			<div class="headline headline-md"><h2>Photo Stream</h2></div>
+			<ul class="list-unstyled blog-photos margin-bottom-30">
+				<li><a href="#"><img class="hover-effect" alt="" src="img/5.jpg"></a></li>
+				<li><a href="#"><img class="hover-effect" alt="" src="img/6.jpg"></a></li>
+				<li><a href="#"><img class="hover-effect" alt="" src="img/8.jpg"></a></li>
+				<li><a href="#"><img class="hover-effect" alt="" src="img/10.jpg"></a></li>
+				<li><a href="#"><img class="hover-effect" alt="" src="img/11.jpg"></a></li>
+				<li><a href="#"><img class="hover-effect" alt="" src="img/1.jpg"></a></li>
+				<li><a href="#"><img class="hover-effect" alt="" src="img/2.jpg"></a></li>
+				<li><a href="#"><img class="hover-effect" alt="" src="img/7.jpg"></a></li>
+			</ul>
+			<div class="headline headline-md"><h2>Blog Tags</h2></div>
+			<ul class="list-unstyled blog-tags margin-bottom-30">
+				<li><a href="#"><i class="fa fa-tags"></i> Business</a></li>
+				<li><a href="#"><i class="fa fa-tags"></i> Music</a></li>
+				<li><a href="#"><i class="fa fa-tags"></i> Internet</a></li>
+				<li><a href="#"><i class="fa fa-tags"></i> Money</a></li>
+				<li><a href="#"><i class="fa fa-tags"></i> Google</a></li>
+				<li><a href="#"><i class="fa fa-tags"></i> TV Shows</a></li>
+				<li><a href="#"><i class="fa fa-tags"></i> Education</a></li>
+				<li><a href="#"><i class="fa fa-tags"></i> People</a></li>
+				<li><a href="#"><i class="fa fa-tags"></i> People</a></li>
+				<li><a href="#"><i class="fa fa-tags"></i> Math</a></li>
+				<li><a href="#"><i class="fa fa-tags"></i> Photos</a></li>
+				<li><a href="#"><i class="fa fa-tags"></i> Electronics</a></li>
+				<li><a href="#"><i class="fa fa-tags"></i> Apple</a></li>
+				<li><a href="#"><i class="fa fa-tags"></i> Canada</a></li>
+			</ul>
+		</div>
+	</script>
+
+	<script type="text/template" id="tpl-post">
+		<div class="blog margin-bottom-40">
+			<div class="blog-title">
+				<div class="title-block">
+					<h2><a href="#post/view/{{_id}}">{{title}}</a></h2>
+				</div>
+				<div class="action-block">
+					<a href="#post/edit/{{_id}}"><i class="fa fa-pencil"></i></a>
+					<a href="#post/delete/{{_id}}" class="js-delete-post"><i class="fa fa-trash-o"></i></a>
+				</div>
+			</div>
+			<div class="blog-post-tags">
+				<ul class="list-unstyled list-inline blog-info">
+					<li><i class="fa fa-calendar"></i> {{releaseDate}}</li>
+					<li><i class="fa fa-pencil"></i> {{author}}</li>
+					<li><i class="fa fa-comments"></i> <a href="#">24 Comments</a></li>
+				</ul>
+				<ul class="list-unstyled list-inline blog-tags">
+					<li>
+						<i class="fa fa-tags"></i> 
+						<a href="#">{{keywords}}</a> 
+					</li>
+				</ul>                                                
+			</div>
+			<div class="blog-img">
+				<img class="img-responsive" src="{{image}}" alt="{{title}}">
+			</div>
+			<p class="text-justify">{{shortDescr}}</p>
+			<p><a class="btn-u btn-u-small" href="#post/view/{{_id}}"><i class="fa fa-plus-sign"></i> Read More</a></p>
+		</div>
+	</script>
+
+	<script type="text/template" id="tpl-post-detail">
+		<div class="blog margin-bottom-40">
+			<div class="blog-title">
+				<div class="title-block">
+					<h2><a href="#post/view/{{_id}}">{{title}}</a></h2>
+				</div>
+				<div class="action-block">
+					<a href="#post/edit/{{_id}}"><i class="fa fa-pencil"></i></a>
+				</div>
+			</div>
+			<div class="blog-post-tags">
+				<ul class="list-unstyled list-inline blog-info">
+					<li><i class="fa fa-calendar"></i>{{releaseDate}}</li>
+					<li><i class="fa fa-pencil"></i> {{author}}</li>
+					<li><i class="fa fa-comments"></i> <a href="#">24 Comments</a></li>
+					<li><i class="fa fa-tags"></i>{{keywords}}</li>
+				</ul>                    
+			</div>
+			<div class="blog-img">
+				<img class="img-responsive" src="{{image}}" alt="{{title}}">
+			</div>
+			<p class="text-justify">{{fullDescr}}</p>
+		</div>
+		<a href="#" onclick="history.back();">Назад</a>      
+		<hr>
+		<h3>Comments</h3>
+		<div class="media">
+			<a class="pull-left" href="#">
+				<img class="media-object avatar" src="img/testimonials/img2.jpg" alt="" />
+			</a>
+			<div class="media-body">
+				<h4 class="media-heading">Media heading <span>5 hours ago / <a href="#">Reply</a></span></h4>
+				<p>Donec id erum quidem rerumd facilis est et expedita distinctio lorem ipsum dolorlit non mi portas sats eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna..</p>
+				<hr>
+			</div>
+		</div>
+		<div class="media">
+			<a class="pull-left" href="#">
+				<img class="media-object avatar" src="img/testimonials/img4.jpg" alt="" />
+			</a>
+			<div class="media-body">
+				<h4 class="media-heading">Media heading <span>5 hours ago / <a href="#">Reply</a></span></h4>
+				<p>Donec id erum quidem rerumd facilis est et expedita distinctio lorem ipsum dolorlit non mi portas sats eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna..</p>
+				<hr>
+			</div>
+		</div>
+		<div class="post-comment">
+			<h3>Leave a Comment</h3>
+			<form>
+				<label>Name</label>
+				<div class="row margin-bottom-20">
+					<div class="col-md-7 col-md-offset-0">
+						<input type="text" class="form-control">
+					</div>                
+				</div>
+
+				<label>Email <span class="color-red">*</span></label>
+				<div class="row margin-bottom-20">
+					<div class="col-md-7 col-md-offset-0">
+						<input type="text" class="form-control">
+					</div>                
+				</div>
+
+				<label>Message</label>
+				<div class="row margin-bottom-20">
+					<div class="col-md-11 col-md-offset-0">
+						<textarea class="form-control" rows="8"></textarea>
+					</div>                
+				</div>
+
+				<p><button class="btn-u" type="submit">Send Message</button></p>
+			</form>
+		</div>
+	</script>
+
+	<script data-main="js/core.js" src="js/lib/require-js/require.js"></script>
+</body>
+</html>

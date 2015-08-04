@@ -1,0 +1,26 @@
+{
+  "name": "backbone-blog",
+  "version": "0.4.0",
+  "description": "foolman blog on Backbone.js",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fo0lman/backbone-blog.git"
+  },
+  "keywords": [
+    "backbone",
+    "blog",
+    "amd",
+    "require.js",
+    "foolman"
+  ],
+  "author": "foolman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fo0lman/backbone-blog/issues"
+  },
+  "homepage": "https://github.com/fo0lman/backbone-blog#readme"
+}

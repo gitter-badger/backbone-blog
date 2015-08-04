@@ -1,0 +1,11 @@
+#MacOS
+.DS_STORE
+
+#JetBrains
+.idea
+
+#Node.js
+node_components
+
+#Bower
+bower_components

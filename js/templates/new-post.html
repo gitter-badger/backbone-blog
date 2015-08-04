@@ -1,0 +1,55 @@
+<div class="row">
+    <div class="col-md-8 col-md-offset-2">
+        <h2 class="text-center">{{#isNew}}Create post{{else}}Edit post{{/isNew}}</h2>
+        <form class="form-horizontal action-form">
+
+            <div class="form-group">
+                <label for="inputFile" class="col-sm-2 control-label">Cover Image:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control post-image-input" id="inputFile" placeholder="Cover Image" value="{{image}}">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputTitle" class="col-sm-2 control-label">Post title:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control post-title-input" id="inputTitle" placeholder="Inpute Title" value="{{title}}">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputAuthor" class="col-sm-2 control-label">Post author:</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control post-author-input" id="inputAuthor" placeholder="Inpute Author" value="{{author}}">
+                </div>
+                <label for="inputRelease" class="col-sm-3 control-label">Post releaseDate:</label>
+                <div class="col-sm-3">
+                    <input type="text" pattern="(0[1-9]|[12][0-9]|3[01])\/(0[1-9]|1[012])\/(19|20)\d\d" class="form-control post-releaseDate-input" id="inputRelease" placeholder="Inpute release" value="{{releaseDate}}">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="inputShortDescr" class="col-sm-2 control-label">Post shortDescr:</label>
+                <div class="col-sm-10">
+                    <textarea rows="10" class="form-control post-shortDescr-input" id="inputShortDescr" placeholder="Inpute shortDescr">{{shortDescr}}</textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputfullDescr" class="col-sm-2 control-label">Post fullDescr:</label>
+                <div class="col-sm-10">
+                    <textarea rows="20" class="form-control post-fullDescr-input" id="inputfullDescr" placeholder="Inpute fullDescr">{{fullDescr}}</textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputKeywords" class="col-sm-2 control-label">Post keywords:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control post-keywords-input" id="inputKeywords" placeholder="Inpute keywords" value="{{keywords}}">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button  class="btn-u btn-u-small" type="submit">OK</button>
+                    <a  class="btn-u btn-u-small" href="#" onclick="history.back();">Отмена</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

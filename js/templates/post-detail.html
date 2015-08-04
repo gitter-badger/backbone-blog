@@ -1,0 +1,72 @@
+<div class="blog margin-bottom-40">
+    <div class="blog-title">
+        <div class="title-block">
+            <h2><a href="#post/view/{{id}}">{{title}}</a></h2>
+        </div>
+        <div class="action-block">
+            <a href="#post/edit/{{id}}"><i class="fa fa-pencil"></i></a>
+        </div>
+    </div>
+    <div class="blog-post-tags">
+        <ul class="list-unstyled list-inline blog-info">
+            <li><i class="fa fa-calendar"></i> {{releaseDate}}</li>
+            <li><i class="fa fa-pencil"></i> {{author}}</li>
+            <li><i class="fa fa-comments"></i> <a href="#"> 24 Comments</a></li>
+            <li><i class="fa fa-tags"></i> {{keywords}}</li>
+        </ul>
+    </div>
+    <div class="blog-img">
+        <img class="img-responsive" src="{{image}}" alt="{{title}}">
+    </div>
+    <p class="text-justify">{{fullDescr}}</p>
+</div>
+<a href="#" onclick="history.back();">Назад</a>
+<hr>
+<h3>Comments</h3>
+<div class="media">
+    <a class="pull-left" href="#">
+        <img class="media-object avatar" src="img/testimonials/img2.jpg" alt="" />
+    </a>
+    <div class="media-body">
+        <h4 class="media-heading">Media heading <span>5 hours ago / <a href="#">Reply</a></span></h4>
+        <p>Donec id erum quidem rerumd facilis est et expedita distinctio lorem ipsum dolorlit non mi portas sats eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna..</p>
+        <hr>
+    </div>
+</div>
+<div class="media">
+    <a class="pull-left" href="#">
+        <img class="media-object avatar" src="img/testimonials/img4.jpg" alt="" />
+    </a>
+    <div class="media-body">
+        <h4 class="media-heading">Media heading <span>5 hours ago / <a href="#">Reply</a></span></h4>
+        <p>Donec id erum quidem rerumd facilis est et expedita distinctio lorem ipsum dolorlit non mi portas sats eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna..</p>
+        <hr>
+    </div>
+</div>
+<div class="post-comment">
+    <h3>Leave a Comment</h3>
+    <form>
+        <label>Name</label>
+        <div class="row margin-bottom-20">
+            <div class="col-md-7 col-md-offset-0">
+                <input type="text" class="form-control">
+            </div>
+        </div>
+
+        <label>Email <span class="color-red">*</span></label>
+        <div class="row margin-bottom-20">
+            <div class="col-md-7 col-md-offset-0">
+                <input type="text" class="form-control">
+            </div>
+        </div>
+
+        <label>Message</label>
+        <div class="row margin-bottom-20">
+            <div class="col-md-11 col-md-offset-0">
+                <textarea class="form-control" rows="8"></textarea>
+            </div>
+        </div>
+
+        <p><button class="btn-u" type="submit">Send Message</button></p>
+    </form>
+</div>
